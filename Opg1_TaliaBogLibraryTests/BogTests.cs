@@ -23,6 +23,9 @@ namespace Opg1_TaliaBogLibraryTests
             Assert.AreEqual("", b3.Titel);
             Assert.AreNotEqual(null,b3.Titel);
 
+            Bog b4 = new Bog("Talia Damary", 663,"1234567890123");
+            Assert.AreEqual(null,b4.Titel);
+            Assert.AreNotEqual("",b4.Titel);
         }
 
         [TestMethod()]

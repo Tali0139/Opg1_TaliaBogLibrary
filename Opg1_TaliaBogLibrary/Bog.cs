@@ -16,6 +16,18 @@ namespace Opg1_TaliaBogLibrary
             Sidetal = sidetal;
             Isbn = isbn;
         }
+
+        /*Tilføjet constructor uden titel, da der ifølge opgaven ikke er nogen constraints på titlen, 
+        som jeg derfor må formode, må tillade null værdier/intet input. I den virkelige verden giver 
+        det måske ikke så meget mening, men der findes jo f.eks. bands som har udgivet plader uden titel.
+        Er godt klar over, at man jo bare kan bruge null eller "" i den første constructor, men når det 
+        nu i følge opgavebeskrivelsen er lovligt med en tom titel, kan man lige så godt gøre det eksplicit*/
+        public Bog(string forfatter, int sidetal, string isbn)
+        {   
+            Forfatter = forfatter;
+            Sidetal = sidetal;
+            Isbn = isbn;
+        }
         
         public string Titel
         {
